@@ -2,6 +2,9 @@
 fffffff
 """
 
+
+from datetime import date, timedelta
+
 from kattie.app import *
 #from .kattie.data import *
 #from .kattie.functions import *
@@ -21,8 +24,44 @@ soup = get_soup(url)
 texto_tratado, lista_doe, estrutura = get_elements(soup)
 
 
+# Pesquisa individualizada
+for nome in pesquisa.items():
+    print(nome)
+    
+    # E-mail
+    #email = good_guys[nome]['e_mail']
+    print(nome('nome_completo'))
+
+    # # Data
+    # data = day.strftime('%d.%m.%Y')
+    # print(data)
+
+    # # Faz Pesquisa
+    # resultados, n_corrrespondencias = encontra_correspondencias(
+    #     good_guys[nome]['aliases'],
+    #     lista_doe
+    # )
+
+    # #
+    # palavras_chave = good_guys[nome]['pesquisa']
+
+    # # Define Assunto
+    # assunto = f'Pesquisa automatizada do Diário Oficial de {data} para {nome}'
+
+
+#     # Printa ou envia o e-mail
+#     """ print ('\n' + email)
+# 	print ('\n' + content)
+# 	print ('\n' + '='* 40) """
+#     envia_email(email, assunto, content)
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
     pass
-    print(content)
+    #print(content)

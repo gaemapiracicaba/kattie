@@ -3,22 +3,24 @@ ffffff
 """
 
 # Dados para envio de e-mail
-USUARIO = 'xxxxx@gmail.com'
-SENHA = 'xxxxxxxxxxxxxxxxx'
+credenciais = {
+    'usuario': 'xxxxx@gmail.com',
+    'senha': 'xxxxxxxxxxxxxxxxx'
+}
+
 
 # Lista de Pessoas Interessadas
-good_guys = {
+pesquisa = {
     'Pimentel': {
-        'aliases': ['José Eduardo de Souza Pimentel'],
-        'email': 'email1@email.br',
-        'pesquisa': ['Piracicaba', 'Recomendação', 'Resolução', 'Aviso'],
+        'nome_completo': 'José Eduardo de Souza Pimentel',
+        'e_mail': 'email1@email.br',
+        'termos_interesse': ['Piracicaba', 'Recomendação', 'Resolução', 'Aviso'],
 
     },
     'Ivan': {
-        'aliases': ['Ivan Carneiro Castanheiro'],
-        'email': 'email2@email.br',
-        'pesquisa': ['Americana', 'Gaema', 'Resolução', 'Aviso'],
-
+        'nome_completo': 'Ivan Carneiro Castanheiro',
+        'e_mail': 'email2@email.br',
+        'termos_interesse': ['Americana', 'Gaema', 'Resolução', 'Aviso'],
     }
 }
 
